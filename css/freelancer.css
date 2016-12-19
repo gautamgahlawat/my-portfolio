@@ -280,7 +280,7 @@ section.tech-skills {
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 
  #portfolio .portfolio-item .portfolio-link .caption .caption-content {
@@ -303,13 +303,22 @@ section.tech-skills {
   margin: 0;
 }
 
+#portfolio .portfolio-item .portfolio-link .project-title{
+  margin-top: 10px;
+  text-align: center;
+}
+
+#portfolio .portfolio-item .portfolio-link .project-title p{
+  margin-bottom: 0;
+}
+
 #portfolio * {
   z-index: 2;
 }
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
-    margin: 0 0 30px;
+    margin: 0 0 20px;
   }
 }
 
