@@ -204,6 +204,14 @@ header .intro-text .skills {
   border-color: #1e757b;
 }
 
+.navbar-brand>img {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: -5px;
+  border-radius: 0.3em;
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 25px 0;
@@ -211,20 +219,30 @@ header .intro-text .skills {
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
   }
+
   .navbar-custom .navbar-brand {
     font-size: 2em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
+
   .navbar-custom.affix {
     padding: 10px 0;
   }
-  .navbar-custom.affix .navbar-brand {
-    font-size: 1.5em;
+
+  .navbar-brand>img {
+    position: relative;
+    top: -20px;
+    height: 60px;
+    width: 60px;
   }
+
 }
 
+.navbar-brand>img:hover {
+  background-color: #1E757B;
+}
 
 section {
   background-color: #f2ffdf;
@@ -573,7 +591,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
-  -webkit-box-shadow: none;.
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
   min-height: 100%;
